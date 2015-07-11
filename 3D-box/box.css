@@ -38,7 +38,7 @@ body {
   	-webkit-justify-content: center;
 	font-weight: bolder;;
 	font-size: 72px;
-	/*background-color: black;*/
+	background-color: black;
 }
 
 #cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
