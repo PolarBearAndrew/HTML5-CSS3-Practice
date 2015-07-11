@@ -16,3 +16,10 @@
 	height: 30px;
 	margin: 6px;
 }
+
+#cube.show1 { transform: translateZ( -100px ) rotateY(    0deg ); }
+#cube.show2 { transform: translateZ( -100px ) rotateX( -180deg ); }
+#cube.show3 { transform: translateZ( -100px ) rotateY(  -90deg ); }
+#cube.show4 { transform: translateZ( -100px ) rotateY(   90deg ); }
+#cube.show5 { transform: translateZ( -100px ) rotateX(  -90deg ); }
+#cube.show6 { transform: translateZ( -100px ) rotateX(   90deg ); }

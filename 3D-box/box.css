@@ -67,7 +67,7 @@ body {
 #cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
 
 #cube { transform: rotateY( 0deg ) rotateX( 0deg ) translateZ( -100px ); }
-/*#cube { transition: transform 1s; }*/
+#cube { transition: transform 1s; }
 
 @keyframes rolling {
     from { transform: rotateY( 0deg ) rotateX( 0deg ); }
