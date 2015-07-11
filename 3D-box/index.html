@@ -17,27 +17,33 @@
 <body>
     <section class="container">
         <div id="cube">
-            <figure class="front"> 1 </figure>
-            <figure class="back"> 2 </figure>
-            <figure class="right"> 3 </figure>
-            <figure class="left"> 4 </figure>
-            <figure class="top"> 5 </figure>
-            <figure class="bottom"> 6 </figure>
+            <figure class="background front"> 1 </figure>
+            <figure class="background back"> 2 </figure>
+            <figure class="background right"> 3 </figure>
+            <figure class="background left"> 4 </figure>
+            <figure class="background top"> 5 </figure>
+            <figure class="background bottom"> 6 </figure>
         </div>
+    </section>
+
+    <section id="arrow">
+        <button class="arrowBtn" data-arrow="left" >left</button>
+        <button class="arrowBtn" data-arrow="right" >right</button>
+        <button class="arrowBtn" data-arrow="top" >top</button>
+        <button class="arrowBtn" data-arrow="bottom" >bottom</button>
     </section>
 
     <section id="ctrl">
         <button id="auto-Rolling">Toggle auto Rolling</button>
         <button id="background">Toggle background</button>
-        <button id="show1">Show 1</button>
-        <button id="show2">Show 2</button>
-        <button id="show3">Show 3</button>
-        <button id="show4">Show 4</button>
-        <button id="show5">Show 5</button>
-        <button id="show6">Show 6</button>
-
-
+        <button class="show"  data-side="1" >Show 1</button>
+        <button class="show"  data-side="2" >Show 2</button>
+        <button class="show"  data-side="3" >Show 3</button>
+        <button class="show"  data-side="4" >Show 4</button>
+        <button class="show"  data-side="5" >Show 5</button>
+        <button class="show"  data-side="6" >Show 6</button>
     </section>
+
 
 </body>
 

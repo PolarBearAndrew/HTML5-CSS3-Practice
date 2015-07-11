@@ -12,11 +12,26 @@
   	-webkit-justify-content: center;
 }
 
-#ctrl button{
+#arrow{
+	/*background-color: green;*/
+	position: fixed;
+	bottom: 40px;
+	right: 0px;
+
+	height: 40px;
+	/*width: 300px;*/
+
+	/*display: -webkit-flex;
+    -webkit-align-items: center;
+  	-webkit-justify-content: center;*/
+}
+
+button{
 	height: 30px;
 	margin: 6px;
 }
 
+#cube { transition: transform .5s; }
 #cube.show1 { transform: translateZ( -100px ) rotateY(    0deg ); }
 #cube.show2 { transform: translateZ( -100px ) rotateX( -180deg ); }
 #cube.show3 { transform: translateZ( -100px ) rotateY(  -90deg ); }
