@@ -40,6 +40,8 @@ $(document).ready( function(){
 	//判定按鈕,啟動旋轉
 	var showClick = function(){
 
+		$('#cube').attr('style', '')
+
 		var side = $(this).attr('data-side');
 		rollto(side);
 	};
