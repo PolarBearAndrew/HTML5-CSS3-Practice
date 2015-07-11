@@ -1,0 +1,18 @@
+#ctrl{
+	/*background-color: green;*/
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+
+	height: 40px;
+	/*width: 300px;*/
+
+	display: -webkit-flex;
+    -webkit-align-items: center;
+  	-webkit-justify-content: center;
+}
+
+#ctrl button{
+	height: 30px;
+	margin: 6px;
+}

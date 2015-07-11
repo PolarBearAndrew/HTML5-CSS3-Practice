@@ -1,6 +1,10 @@
 body {
-    padding: 100px;
     background-color: #333;
+
+    padding: 0px;
+    padding-top: 200px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
 }
 
 .container {
@@ -16,9 +20,13 @@ body {
     position: absolute;
     transform-style: preserve-3d;
 
+    /*border: 1px solid white;*/
+}
+
+.autoRolling{
     /* animation */
     animation-name: rolling;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -31,6 +39,10 @@ body {
     border: 5px solid white;
     position: absolute;
 
+    /* position */
+    margin-top:0px;
+    margin-left:0px;
+
 	/* font */
     color: white;
     display: -webkit-flex;
@@ -38,8 +50,13 @@ body {
   	-webkit-justify-content: center;
 	font-weight: bolder;;
 	font-size: 72px;
-	background-color: black;
+
 }
+
+.background{
+    background-color: black;
+}
+
 
 #cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
 #cube .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
@@ -53,11 +70,8 @@ body {
 /*#cube { transition: transform 1s; }*/
 
 @keyframes rolling {
-    from {
-    	transform: rotateY( 0deg ) rotateX( 0deg )
-    }
-    to {
-    	transform: rotateY( 360deg ) rotateX( 360deg )
-    }
+    from { transform: rotateY( 0deg ) rotateX( 0deg ); }
+    to { transform: rotateY( 360deg ) rotateX( 360deg ); }
+
 }
 
