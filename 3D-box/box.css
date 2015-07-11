@@ -1,7 +1,6 @@
 body {
     padding: 100px;
     background-color: #333;
-    perspective: 1000px;
 }
 
 .container {
@@ -16,8 +15,11 @@ body {
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
+
+    /* animation */
     animation-name: rolling;
     animation-duration: 10s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
