@@ -1,5 +1,5 @@
 body {
-    padding: 0px;
+    padding: 100px;
     background-color: #333;
     perspective: 1000px;
 }
@@ -16,6 +16,9 @@ body {
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
+    animation-name: rolling;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #cube figure {
@@ -45,4 +48,14 @@ body {
 #cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
 
 #cube { transform: rotateY( 0deg ) rotateX( 0deg ) translateZ( -100px ); }
-#cube { transition: transform 1s; }
+/*#cube { transition: transform 1s; }*/
+
+@keyframes rolling {
+    from {
+    	transform: rotateY( 0deg ) rotateX( 0deg )
+    }
+    to {
+    	transform: rotateY( 360deg ) rotateX( 360deg )
+    }
+}
+
