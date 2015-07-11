@@ -44,12 +44,6 @@ $(document).ready( function(){
 		rollto(side);
 	};
 
-	// var arrowClick = function(){
-
-	// 	var arrow = $(this).attr('data-arrow');
-	// 	rollto(sideData[ now - 1 ][arrow]);
-	// };
-
 	var y = 0, x = 0;
 
 	var toLeft = function(){ y += 90; roll()};
