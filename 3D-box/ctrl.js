@@ -33,6 +33,10 @@ $(document).ready( function(){
 					.addClass( 'show' + side );
 	}
 
+	var roll = function(){
+		$('#cube').css("transform","rotateX(" + x + "deg)" + "rotateY(" + y + "deg)");
+	}
+
 	//判定按鈕,啟動旋轉
 	var showClick = function(){
 
@@ -40,16 +44,28 @@ $(document).ready( function(){
 		rollto(side);
 	};
 
-	var arrowClick = function(){
+	// var arrowClick = function(){
 
-		var arrow = $(this).attr('data-arrow');
-		rollto(sideData[ now - 1 ][arrow]);
-	};
+	// 	var arrow = $(this).attr('data-arrow');
+	// 	rollto(sideData[ now - 1 ][arrow]);
+	// };
+
+	var y = 0, x = 0;
+
+	var toLeft = function(){ y += 90; roll()};
+	var toRight = function(){ y -= 90; roll()};
+	var toTop = function(){ x -= 90; roll()};
+	var toBottom = function(){ x += 90; roll()};
 
 	//委派
 	$('body').on('click', '#auto-Rolling', autoRolling );
 	$('body').on('click', '#background', background );
+
+	$('body').on('click', '#toLeft', toLeft );
+	$('body').on('click', '#toRight', toRight );
+	$('body').on('click', '#toTop', toTop );
+	$('body').on('click', '#toBottom', toBottom );
+
 	$('body').on('click', '.show', showClick );
-	$('body').on('click', '.arrowBtn', arrowClick );
 
 });
