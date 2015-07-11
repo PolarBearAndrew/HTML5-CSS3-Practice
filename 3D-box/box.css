@@ -1,0 +1,48 @@
+body {
+    padding: 0px;
+    background-color: #333;
+    perspective: 1000px;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#cube figure {
+	/* box */
+    width: 196px;
+    height: 196px;
+    display: block;
+    border: 5px solid white;
+    position: absolute;
+
+	/* font */
+    color: white;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+  	-webkit-justify-content: center;
+	font-weight: bolder;;
+	font-size: 72px;
+	/*background-color: black;*/
+}
+
+#cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
+#cube .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
+#cube .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
+
+#cube .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
+#cube .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+#cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+
+#cube { transform: rotateY( 0deg ) rotateX( 0deg ) translateZ( -100px ); }
+#cube { transition: transform 1s; }
