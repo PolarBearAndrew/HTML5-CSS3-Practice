@@ -1,2 +1,12 @@
-body
+@import ./basic
+
+@mixin normal($num:100)
   color: black
+  width: $num
+  height: $num
+
+div.small
+  +normal(300) //+和normal中間不能有空白
+
+div.big
+  +normal()
