@@ -4,9 +4,15 @@
   color: black
   width: $num
   height: $num
+  @content
 
-div.small
+.small
   +normal(300) //+和normal中間不能有空白
 
-div.big
+.big
   +normal()
+
+.more
+  +normal()
+  background-color: #333
+
