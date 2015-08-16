@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* 當然可以用自己的 */
+/* @import 'compass/reset' */
+/* line 5, ../sass/test.sass */
+.box {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
