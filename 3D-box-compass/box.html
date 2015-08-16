@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 3D-box </title>
+
+    <link rel="stylesheet" href="./stylesheets/box.css">
+    <link rel="stylesheet" href="./stylesheets/ctrl.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="./javascripts/ctrl.js"></script>
+
+</head>
+
+<body>
+    <section class="container">
+        <div id="cube">
+            <figure class="background front"> 1 </figure>
+            <figure class="background back"> 2 </figure>
+            <figure class="background right"> 3 </figure>
+            <figure class="background left"> 4 </figure>
+            <figure class="background top"> 5 </figure>
+            <figure class="background bottom"> 6 </figure>
+        </div>
+    </section>
+
+    <section id="arrow">
+        <button id="toLeft">left</button>
+        <button id="toRight" >right</button>
+        <button id="toTop" >top</button>
+        <button id="toBottom" >bottom</button>
+    </section>
+
+    <section id="ctrl">
+        <button id="auto-Rolling">Toggle auto Rolling</button>
+        <button id="background">Toggle background</button>
+        <button class="show"  data-side="1" >Show 1</button>
+        <button class="show"  data-side="2" >Show 2</button>
+        <button class="show"  data-side="3" >Show 3</button>
+        <button class="show"  data-side="4" >Show 4</button>
+        <button class="show"  data-side="5" >Show 5</button>
+        <button class="show"  data-side="6" >Show 6</button>
+    </section>
+
+
+</body>
+
+</html>

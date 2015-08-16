@@ -1,7 +1,21 @@
 /* 當然可以用自己的 */
 /* @import 'compass/reset' */
+
+$icons-spacing: 20px
+
 @import 'compass/css3'
+@import 'icons/*.png'
+@include all-icons-sprites
 
 .box
-  +border-radius(100%)
+  +border-radius(50%)
+  color: red
+  height: 800px
 
+.ico
+  @extend .icons-panda
+  width: image-width('icons/panda.png')
+  height: image-height('icons/panda.png')
+
+.bg
+  background: inline-image('icons/panda.png')

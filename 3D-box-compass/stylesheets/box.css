@@ -1,0 +1,130 @@
+/* @import 'compass/reset' */
+/* line 11, ../sass/box.sass */
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: center;
+  flex-direction: center;
+  background-color: #333;
+  padding-top: 200px;
+}
+
+/* line 18, ../sass/box.sass */
+.container {
+  -moz-perspective: relative;
+  -webkit-perspective: relative;
+  perspective: relative;
+  perspective: 1000px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* line 25, ../sass/box.sass */
+#cube {
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) rotateX(0deg) translateZ(-100px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid white; */
+}
+/* line 32, ../sass/box.sass */
+#cube figure {
+  /* box */
+  display: block;
+  position: absolute;
+  border: 5px solid white;
+  width: 196px;
+  height: 196px;
+  /* position */
+  margin: 0px;
+  /* font */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 72px;
+  color: white;
+}
+/* line 46, ../sass/box.sass */
+#cube .front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+/* line 48, ../sass/box.sass */
+#cube .right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+/* line 50, ../sass/box.sass */
+#cube .left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+/* line 52, ../sass/box.sass */
+#cube .back {
+  transform: rotateX(180deg) translateZ(100px);
+}
+/* line 54, ../sass/box.sass */
+#cube .top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+/* line 56, ../sass/box.sass */
+#cube .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* line 59, ../sass/box.sass */
+#ctrl {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /*background-color: green; */
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 40px;
+  /*width: 300px; */
+}
+
+/* line 68, ../sass/box.sass */
+#arrow {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /*background-color: green; */
+  position: fixed;
+  bottom: 40px;
+  right: 0px;
+  height: 40px;
+  /*width: 300px; */
+}
+
+/* line 77, ../sass/box.sass */
+.autoRolling {
+  animation: rolling 6s infinite;
+  animation-timing-function: linear;
+}
+
+/* line 81, ../sass/box.sass */
+.background {
+  background-color: black;
+}
+
+@keyframes rolling {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
