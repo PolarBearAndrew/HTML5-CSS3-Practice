@@ -15,7 +15,7 @@
 
 ## 清單
 
-| Date      | Title           | Used                |  Note                       | Goto  |
+| Date      | Title           | Used                |  Note                       | Link  |
 | :-------: |:---------------:| :------------------:| :--------------------------:| -----:|
 | 2015/8/16 | 3D-box          | 3D-box,Compass,Sass | 將 3D-box 修改為 Compass/Sass | [ Demo ](http://polarbearandrew.github.io/HTML5-CSS3-Practice/3D-box-compass/box.html) |
 | 2015/8/16 | Compass         | Compass,Sass        | 測試 Compass 功能，重點在 Sass 的資料夾 | [ Demo ](http://polarbearandrew.github.io/HTML5-CSS3-Practice/demo-compass/index.html) |
