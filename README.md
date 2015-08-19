@@ -2,7 +2,7 @@
 
 練習 HTML5 和 CSS3 的測試作品
 
-### 因少部分作品支援性問題，請使用 [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html) 作為主要瀏覽器
+##### 因少部分作品支援性問題，請使用 [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html) 作為主要瀏覽器
 
 ## 使用技術總覽：
 
